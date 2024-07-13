@@ -44,6 +44,7 @@ article {
 
 .header {
     flex-direction: column;
+    justify-content: center;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     padding: 30px 45px;
     padding-bottom: 40px;
@@ -61,22 +62,22 @@ article {
         background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
         width: 140px;
         aspect-ratio: 1;
+
+        h2 {
+            font-weight: 800;
+            font-size: 55px;
+            color: white;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 16px;
+            color: hsl(241, 100%, 89%);
+        }
     }
 
     h1 {
         font-weight: 500;
-    }
-
-    #round h2 {
-        font-weight: 800;
-        font-size: 55px;
-        color: white;
-    }
-
-    #round h3 {
-        font-weight: 700;
-        font-size: 16px;
-        color: hsl(241, 100%, 89%);
     }
 
     #text {
@@ -84,18 +85,20 @@ article {
         flex-direction: column;
         align-items: center;
         gap: 18px;
+
+        h4 {
+            color: white;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
     }
 
-    #text h4 {
-        color: white;
-        font-weight: 700;
-        font-size: 24px;
-    }
 
-    #text p {
-        font-size: 16px;
-        text-align: center;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -164,6 +167,32 @@ article {
 }
 
 @media screen and (min-width: 768px) {
+
+    .header {
+        h1 {
+            font-weight: 800;
+            font-size: 24px;
+        }
+
+        #round {
+            width: 200px;
+
+            h2 {
+                font-size: 72px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+        #text {
+            h4 {
+                font-size: 32px;
+            }
+        }
+    }
+
     .summary {
         border-radius: 0 33px 33px 0;
     }
